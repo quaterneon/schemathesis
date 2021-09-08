@@ -10,8 +10,19 @@ This library integrates with the Schemathesis.io platform, where you can store, 
 Quickstart
 ----------
 
-First, you need to create a new project in Schemathesis.io and get a token on its "Details" page.
-Once you got an API token, you can add use it with Schemathesis CLI. Integrations with ``pytest`` and ``unittest`` are in the works.
+First, you need to add your API to Schemathesis.io by clicking on the "Add API" button and filling details in a form on that page:
+
+.. image:: https://raw.githubusercontent.com/schemathesis/schemathesis/docs/img/service_no_apis_yet.png
+
+Then get a token from the "Details" page by clicking on a little gear icon:
+
+.. image:: https://raw.githubusercontent.com/schemathesis/schemathesis/docs/img/service_gear_icon.png
+
+Then you can find an API token there. Note that tokens are unique per API:
+
+.. image:: https://raw.githubusercontent.com/schemathesis/schemathesis/docs/img/service_details.png
+
+Once you got an API token, you can use it with Schemathesis CLI. Integrations with ``pytest`` and ``unittest`` are in the works.
 
 Command Line Interface
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -40,6 +51,8 @@ These failures are aggregated into groups, so you can track recurring ones.
 You also have better failure description and an ability to replay failures from the UI:
 
 .. image:: https://raw.githubusercontent.com/schemathesis/schemathesis/master/img/service_issue_detail.png
+
+You can use Schemathesis.io test runners instead of CLI. They have more checks & better data generation than Open Source Schemathesis.
 
 .. important::
 
